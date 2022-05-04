@@ -1,4 +1,4 @@
-package revature.com;
+package com.revature;
 
 import java.util.Iterator;
 import java.util.LinkedHashMap;
