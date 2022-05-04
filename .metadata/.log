@@ -633,3 +633,18 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.ui 2 2 2022-05-04 15:33:43.956
 !MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-04 17:03:41.232
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-04 17:03:41.233
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-04 17:03:41.234
+!MESSAGE buffering callback sts4.classpath.TmuDIFER loop-detection false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-04 17:03:41.234
+!MESSAGE executing callback sts4.classpath.TmuDIFER 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-05-04 17:03:41.252
+!MESSAGE executing callback sts4.classpath.TmuDIFER SUCCESS [done]
