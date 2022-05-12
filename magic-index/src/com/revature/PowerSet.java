@@ -9,7 +9,7 @@ public class PowerSet {
 	public static void main(String[] args) {
 	    int[] inputArr = {5,10,15,20,25};
 
-	    int totalCombinations = showCombinations(inputArr); // calculate possible combinations
+	    int totalCombinations = showCombinations(inputArr) + 1; // calculate possible combinations, add 1 for null set
 	    List<List<Integer>> arrayOfbytes = getByteArrays(inputArr);  // create byte arrays to map combinations
 	    List<List<Integer>> combinations = mapCombinations(inputArr, arrayOfbytes); // map combinations to the byte string of the index: 1=include, 0=don't include
 
@@ -17,7 +17,7 @@ public class PowerSet {
 	    System.out.println("Input array: "  + Arrays.toString(inputArr));
 
 	    // print number of possible combinations
-	    System.out.println("Total combinations: " + totalCombinations);
+	    System.out.println("Total combinations: " + totalCombinations + " (including null set)");
 
 	    /** For testing
 	    for(int i = 0; i<totalCombinations; i++) {
@@ -39,9 +39,9 @@ public class PowerSet {
 		      int n = length;
 		      int r = length - i;
 		      int combo = getFactorial(n) / (getFactorial(n - r) * getFactorial(r));
-		      result = result + combo;
+		      result = result + combo; 
 		    } 
-		  return result;   
+		  return result;    
 		}
 
 		public static List<List<Integer>> getByteArrays(int[] intArr) {
@@ -54,7 +54,7 @@ public class PowerSet {
 		    char[] charArr = new char[length]; // character array the size of the input array length
 		    Arrays.fill(charArr, '0'); // fill with zeros
 		
-		    for(int i=1; i<combos+1; i++) {
+		    for(int i=0; i<combos+1; i++) {
 		      char[] byteCharArr = Integer.toBinaryString(i).toCharArray(); // character array with binary ones and zeros
 		      List<Integer> byteList = new ArrayList<Integer>(); // list that will be part of return list
 		
